@@ -48,7 +48,7 @@ export const projects = [
     'title': 'Metronome',
     'imageUrl': `url(${metronome}) center/cover`,
     'text': 'React app that helps musicians keep the beat', 
-    'buttonText': 'Live',
+    'buttonText': 'Demo',
     'buttonTarget': 'https://kmil-metronome.herokuapp.com/',
     'github': 'https://github.com/KevinMillerSax/metronome',
     'icons' : [react, js, html, css] 
@@ -57,7 +57,7 @@ export const projects = [
     'title': 'Chess',
     'imageUrl': `url(${chess}) center/cover`,
     'text': 'JavaScript/HTML/CSS two player chess app', 
-    'buttonText': 'Live',
+    'buttonText': 'Demo',
     'buttonTarget': 'https://kevinmillersax.github.io/Chess/',
     'github': 'https://github.com/KevinMillerSax/Chess', 
     'icons' : [js, html, css]
@@ -84,7 +84,7 @@ export const projects = [
     'title': 'Tic-Tac-Toe',
     'imageUrl': `url(${ticTac}) center/cover`,
     'text': 'Tic-Tac-Toe game built with JavaScript/HTML/CSS', 
-    'buttonText': 'Live',
+    'buttonText': 'Demo',
     'buttonTarget': 'https://kevinmillersax.github.io/ticTacToe/',
     'github': 'https://github.com/KevinMillerSax/ticTacToe',
     'icons' : [js, html, css] 
