@@ -1,3 +1,6 @@
+*{
+  font-family: 'Quicksand', sans-serif !important;
+}
 .header-color{
   background: #00b09b;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
@@ -80,11 +83,10 @@
 }
 
 .contact-grid h2 {
-  font-family: 'Quicksand', sans-serif;
+  
 }
 
 .contact-grid p {
-  font-family: 'Quicksand', sans-serif;
   font-weight: bold;
 }
 
@@ -113,4 +115,22 @@
   background: #27221F;
   color: white;
   padding: 2em;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.projects-grid h5 {
+  padding-left: 16px;
+  background: #00b09b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 34px;
+  padding-top: 10px;
+  font-weight: bold;
 }

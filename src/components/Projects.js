@@ -1,64 +1,51 @@
 import React, {Component} from 'react';
 import {Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText} from 'react-mdl';
+import {projects} from '../constants/constants';
+import js from '../images/js.png'
+
 
 class Projects extends Component {
   constructor(props){
     super(props);
-    this.state = {activeTab: 0};
   }
-  toggleCategories() {
-    if(this.state.activeTab === 0) {
+  createCards() {
       return(
         <div className="projects-grid">
+          {projects.map((el, index) => (
+            
+            <Card key = {index}  shadow={5} style={{minWidth: '350px',margin: "0px auto 20px auto"}}>
+              <CardTitle  style={{color: '#fff', height: '200px', background: el['imageUrl']}}></CardTitle>
+              <h5>{el['title']}</h5>
+              <CardText>
+                {el['text']}
+              </CardText>
+              <CardActions>
 
+                <a href={el['github']} target="_blank"><Button colored>GitHub</Button></a>
+                <a href={el['buttonTarget']} target="_blank"><Button colored>{el['buttonText']}</Button></a>
+                
+              </CardActions>
+              <CardText style={{paddingTop: '0px'}}>
+                {el['icons'].map((image, index) => (
+                  <img key= {index} height="50px" width="50px"src={image}></img>
+                ))}
+              </CardText>
+            </Card>
 
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1200/1*BFV8Gwt5BILa-xv04IK2ng.png) center/cover'}}>Project #1</CardTitle>
-            <CardText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            </CardText>
-            <CardActions>
-            <a href="https://github.com/KevinMillerSax" target="_blank"><Button colored>GitHub</Button></a>
-              <Button colored>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"/>
-            </CardMenu>
-          </Card>
-
-          
+           ))
+          }
         </div>
       );
-    } else if (this.state.activeTab === 1) {
-      return(
-        <div><h1>This is JavaScript/React</h1></div>
-      );
-    }else if (this.state.activeTab === 2) {
-      return(
-        <div><h1>This is NodeJS</h1></div>
-      );
-    }else if (this.state.activeTab === 3) {
-      return(
-        <div><h1>This is WordPress</h1></div>
-      );
-    }
   }
   
 
   render() {
     return(
-      <div className="category-tabs">
-        <Tabs activeTab={this.state.activeTab} 
-          onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
-            <Tab>All Projects</Tab>
-            <Tab>React/JavaScript</Tab>
-            <Tab>NodeJS</Tab>
-            <Tab>WordPress</Tab>
-        </Tabs>
-       
+      <div>   
         <Grid>
           <Cell col={12}>
-            <div className="content">{this.toggleCategories()}</div>
+            <div className="content">{this.createCards()}
+            </div>
           </Cell>
         </Grid>  
       </div>
