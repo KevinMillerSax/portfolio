@@ -5,8 +5,8 @@ import chess from '../images/chess.png';
 import rheuben from '../images/ra.png';
 import kenny from '../images/kenny.png';
 import ticTac from '../images/ticTac.png';
-import js from '../images/js.png';
-import css from '../images/css.png';
+import js from '../images/js2.png';
+import css from '../images/css2.png';
 import html from '../images/html.png';
 import wp from '../images/wp.png';
 import php from '../images/php.png';
@@ -14,6 +14,13 @@ import sql from '../images/sql.png';
 import react from '../images/react.png';
 import node from '../images/node.png';
 import mongo from '../images/mongo.png';
+import pomo1 from '../images/waterfall1.png';
+import pomo2 from '../images/waterfall2.png';
+import mov1 from '../images/mov1.png';
+import mov2 from '../images/mov2.png';
+import ken1 from '../images/ken1.png';
+
+
 
 export const projects = [
   {
@@ -42,14 +49,17 @@ export const projects = [
     'buttonText': 'Details',
     'buttonTarget': '#',
     'github': 'https://github.com/KevinMillerSax/movie-finder',
-    'icons' : [react, js, html, css] 
+    'icons' : [react, js, html, css],
+    'description' : `Movie Finder is an app built with React Native.  It utilizes the IMDB API to allow user to search for info
+      on their favorite movies, tv shows, and videogames.`,
+    'photo1': [mov1, mov2]
   },  
   {
     'title': 'Metronome',
     'imageUrl': `url(${metronome}) center/cover`,
     'text': 'React app that helps musicians keep the beat', 
     'buttonText': 'Demo',
-    'buttonTarget': 'https://kmil-metronome.herokuapp.com/',
+    'buttonTarget': 'https://km-metronome.herokuapp.com/',
     'github': 'https://github.com/KevinMillerSax/metronome',
     'icons' : [react, js, html, css] 
   },  
@@ -69,16 +79,21 @@ export const projects = [
     'buttonText': 'Details',
     'buttonTarget': '#',
     'github': 'https://github.com/KevinMillerSax/sax-store',
-    'icons' : [wp, php, js, html, css, sql]
+    'icons' : [wp, php, js, html, css, sql],
+    'description' : `(In Development) Kenny G Saxophones will be the eCommerce platform for A&K Global Enterprises Inc, the company that manufactures and 
+      distributes Kenny G's signature line of saxophones.  The platform is being built on WordPress with PHP and MySQL for the back end.`,
+    'photo1': [ken1]
   },  
   {
     'title': 'Pomodoro',
-    'imageUrl': 'url(https://miro.medium.com/max/1200/1*BFV8Gwt5BILa-xv04IK2ng.png) center/cover',
+    'imageUrl': `url(${pomo1}) center/cover`,
     'text': 'Pomodoro timer build in React Native', 
     'buttonText': 'Details',
     'buttonTarget': '#',
     'github': 'https://github.com/KevinMillerSax/pomodoro',
-    'icons' : [react, js, html, css] 
+    'icons' : [react, js, html, css],
+    'description' : 'Pomodoro is a React Native app. Pomodoro is a time management technique where people break down their work and break time into intervals.',
+    'photo1': [pomo1, pomo2]
   },  
   {
     'title': 'Tic-Tac-Toe',

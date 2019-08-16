@@ -1,20 +1,25 @@
 import React, {Component} from 'react';
 import {Grid, Cell, Card, CardTitle, CardActions, Button, CardText, Dialog, DialogTitle, DialogContent, DialogActions} from 'react-mdl';
 import {projects} from '../constants/constants';
-import MyDialog from './MyDialog'
+
 
 
 class Projects extends Component {
   constructor(props){
     super(props);
-    this.state = {};
+    this.state = {
+      text: ''
+    };
     this.handleOpenDialog = this.handleOpenDialog.bind(this);
     this.handleCloseDialog = this.handleCloseDialog.bind(this);
+    
   }
 
-  handleOpenDialog() {
+  handleOpenDialog(text, photos) {
     this.setState({
-      openDialog: true
+      openDialog: true,
+      text: text,
+      photos: photos
     });
   }
 
@@ -38,7 +43,7 @@ class Projects extends Component {
             <CardActions>
               <a href={el['github']} target="_blank"><Button colored>GitHub</Button></a>
               {el['buttonText'] === 'Details' 
-                ? <a onClick={this.handleOpenDialog}><Button colored>{el['buttonText']}</Button></a> 
+                ? <a onClick={() => this.handleOpenDialog(el['description'], el['photo1'])}><Button colored>{el['buttonText']}</Button></a> 
                 : <a href={el['buttonTarget']} target="_blank"><Button colored>{el['buttonText']}</Button></a> }    
             </CardActions>
             <CardText style={{paddingTop: '0px'}}>
@@ -56,6 +61,7 @@ class Projects extends Component {
   
 
   render() {
+    const photos = this.state.photos;
     return(
       <div>   
         <Grid>
@@ -67,17 +73,23 @@ class Projects extends Component {
           {/* modal start */}
           <Cell>
             
-
-            <Dialog style={{width: "800px"}}open={this.state.openDialog}>
-              <DialogTitle><img src="https://i.axs.com/2017/03/27477-optimized_58bf5972dde3a.png"></img></DialogTitle>
+          
+            <Dialog style={{width: "800px", paddingBottom: '0px'}}open={this.state.openDialog}>
+              <DialogTitle>
+                <div className="image-container">
+                  {photos && photos.map((photo, index) => (
+                    <img key= {index} style={{height: '300px'}}src={photo}></img>
+                  ))}
+                </div>
+              </DialogTitle>
               <DialogContent>
-                <p>Render some data here concerning the project at hand</p>
+                <p>{this.state.text}</p>
               </DialogContent>
               <DialogActions>
                 <Button type='button' onClick={this.handleCloseDialog}>Close</Button>
               </DialogActions>
             </Dialog>
-
+           
           </Cell>
           {/* modal end */}
 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Grid, Cell} from 'react-mdl';
 import Experience from './Experience';
+import Education from './Education';
 
 class Resume extends Component {
   render() {
@@ -8,34 +9,62 @@ class Resume extends Component {
       <div>
         <Grid>
           <Cell col={4}>
-            <div style={{textAlign: 'center'}}>
-            <img 
-              src="https://media.licdn.com/dms/image/C5603AQEHIWfYTrATtQ/profile-displayphoto-shrink_200_200/0?e=1570665600&v=beta&t=8mmn-LhmDkZpT75BlHOQn6nQ4r8qflecmdamV8xnmB0"
-              alt="photo of me"
-              style={{height: '200px'}}
-            />
-            </div>
-            <h2 style={{paddingTop: '2em'}}>Kevin Miller</h2>
+            <h2 style={{paddingTop: '0'}}>Kevin Miller</h2>
             <h4 style={{color: 'grey'}}>Web Developer</h4>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <p>just a little blurb about my life and experience, yatta yatta </p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <h5>Address</h5>
-            <p>1781 Orchid Ave.  Los Angeles, CA.</p>
+            <h5 style={{color: 'grey'}}>Los Angeles, CA.</h5>
+            <hr className="resume-hr"/>
+            <p> I’m a motivated front-end developer who’s passionate about new technologies and design. I communicate freely in  React, JavaScript, HTML, and CSS. I am focused on constantly learning new technologies and I apply this knowledge to make my websites scalable and to provide the best user experience.   </p>
+            <hr className="resume-hr"/>
             <h5>Phone</h5>
             <p>317-654-8915</p>
             <h5>Email</h5>
             <p>kmilsax@gmail.com</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <hr className="resume-hr"/>
           </Cell>
           
           <Cell className="resume-right-col" col={8}>
+            <h2>Work History</h2>
             <Experience 
+              start={2019}
+              end={'today'}
+              title={'Web Developer'}
+              description={`Contractor for A&K Global Enterprises, Inc. I'm building an eCommerce 
+              platform that will sell gifts and musical instruments. `}
+            />
+            <Experience 
+              start={2016}
+              end={2019}
+              title={'Musician - Carnival Corporation'}
+              description={`Performed music on a variety of Carnival Cruise Ships. 
+              I was responsible for marketing and advertising through demographic research and creative targeting.
+              Also, I was chosen to be the Team Member of the Month for an engaging and proactive attitude. `}
+            />
+            <Experience 
+              start={2014}
+              end={2016}
+              title={'Musician - Norwegian Cruise Lines'}
+              description={`Performed Broadway productions in the main theaters of the ships: Oceania Marina and Norwegian Pearl. `}
+            />
+            <Experience 
+              start={2013}
+              end={2014}
+              title={'English Teacher'}
+              description={`Taught English in China at Yilin Peison International Institute.   `}
+            />
+            <hr className="resume-hr" style={{width: '100%'}} />
+            <h3>Education</h3>
+            <Education 
               start={2008}
               end={2012}
-              title={'went to school'}
-              description={'had a great time studying'}
+              title={'Ball State University'}
+              major={'Music Technology'}
+              minor={'Digital Media Production'}
             />
+            <hr className="resume-hr" style={{width: '100%'}} />
+            <h4>Skills:</h4>
+            <p>JavaScript (ES6+), React, React-Native, jQuery, NodeJS, Express, MongoDB, Mongoose, SQL, HTML, CSS, SASS, WordPress, PHP, PhotoShop, terminal, Git, GitHub, MS Office </p>
+
+            
           </Cell>
         </Grid>
       </div>
