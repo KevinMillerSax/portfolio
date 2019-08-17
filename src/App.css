@@ -22,13 +22,8 @@ h1, h2, h3, h4, h5, p {
   height: 100vh;
 }
 
-.avatar-img {
-  height:250px;
-  padding-top: 5em;
-}
 
 .banner-text {
-  
   background-color: black;
   opacity: .8;
   width: 75%;
@@ -184,4 +179,21 @@ h1, h2, h3, h4, h5, p {
     width: 90vw;
     margin: 0px 20px 20px 20px;
   }
+  .banner-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+  }
+  .banner-text {
+    background-color: black;
+    opacity: .8;
+    width: 75%;
+    margin: 50px auto 50px auto;
+    border-radius: 10px;
+  }
+  .contact-list i {
+    font-size: 33px;
+    padding-right: 1rem;
+  }
+  
 } 
