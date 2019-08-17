@@ -38,7 +38,7 @@ export const projects = [
   {
     'title': 'Frasier-Fan',
     'imageUrl': `url(${frasier}) center/cover`,
-    'text': 'Full stack CRUD app built with NodeJS, MongoDB, PassPort, Express, and GoogleOauth', 
+    'text': 'Full stack CRUD app built with NodeJS, MongoDB, Passport, Express, and GoogleOauth', 
     'buttonText': 'Link',
     'buttonTarget': 'https://frasier-app.herokuapp.com/',
     'github': 'https://github.com/KevinMillerSax/frasier',
