@@ -20,6 +20,9 @@ class Resume extends Component {
             <h5>Email</h5>
             <p>kmilsax@gmail.com</p>
             <hr className="resume-hr"/>
+            <a href="https://drive.google.com/file/d/1niPG-p-PDRCcDjhbMEq_JnBCc5zyhvXu/view?usp=sharing" target="_blank" style={{color: '#00b09b'}}>
+              Get My Resume in PDF
+            </a>
           </Cell>
           
           <Cell className="resume-right-col" col={8}>

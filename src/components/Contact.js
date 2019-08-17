@@ -4,16 +4,16 @@ import {Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
 class Contact extends Component {
   render() {
     return(
-      <div className="contact-body">
+      <div className="contact-body" style={{overflow: 'scroll'}}>
         <Grid className="contact-grid">
           <Cell col="6">
-            <h2>Kevin Miller</h2>
+            <h2>Me:</h2>
             <img 
               src="https://media.licdn.com/dms/image/C5603AQEHIWfYTrATtQ/profile-displayphoto-shrink_200_200/0?e=1570665600&v=beta&t=8mmn-LhmDkZpT75BlHOQn6nQ4r8qflecmdamV8xnmB0"
               alt="photo of me"
               style={{height: '250px'}}
             />
-            <p style={{width: '75%', margin: 'auto', paddingTop: '1em'}}>Kevin is an exceptional developer, he's your go to guy for sure, I mean, just check out this awesome bio</p>
+            <p style={{width: '75%', margin: 'auto', paddingTop: '1em'}}>Feel free to get in touch!</p>
           </Cell>
           <Cell col="6">
             <h2>Contact:</h2>
@@ -40,7 +40,7 @@ class Contact extends Component {
               <ListItemContent className="contact-list-item">
                 <div>
                 <i className="fa fa-linkedin" aria-hidden="true"></i>
-                <a href="https://www.linkedin.com/in/k-p-miller/" target="_blank">LinkedIn </a>
+                <a href="https://www.linkedin.com/in/k-p-miller/" target="_blank" style={{color:'#00b09b'}}>LinkedIn </a>
                 </div>
               </ListItemContent>
             </ListItem>

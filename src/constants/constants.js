@@ -5,13 +5,14 @@ import chess from '../images/chess.png';
 import rheuben from '../images/ra.png';
 import kenny from '../images/kenny.png';
 import ticTac from '../images/ticTac.png';
-import js from '../images/js2.png';
-import css from '../images/css2.png';
+import js from '../images/js-padding.png';
+import css from '../images/css-square.png';
 import html from '../images/html.png';
 import wp from '../images/wp.png';
 import php from '../images/php.png';
 import sql from '../images/sql.png';
 import react from '../images/react.png';
+import native from '../images/react-native.png';
 import node from '../images/node.png';
 import mongo from '../images/mongo.png';
 import pomo1 from '../images/waterfall1.png';
@@ -22,6 +23,7 @@ import ken1 from '../images/ken1.png';
 
 
 
+
 export const projects = [
   {
     'title': 'rheubenallenwoodwinds.com',
@@ -29,7 +31,7 @@ export const projects = [
     'text': 'eCommerce site for Rheuben Allen and Associates', 
     'buttonText': 'Link',
     'buttonTarget' : 'https://rheubenallenwoodwinds.com',
-    'github': 'https://github.com/KevinMillerSax',
+    'github': 'https://github.com/KevinMillerSax/rheuben',
     'icons' : [wp, php, js, html, css, sql]
     
   },  
@@ -49,7 +51,7 @@ export const projects = [
     'buttonText': 'Details',
     'buttonTarget': '#',
     'github': 'https://github.com/KevinMillerSax/movie-finder',
-    'icons' : [react, js, html, css],
+    'icons' : [native, js, html, css],
     'description' : `Movie Finder is an app built with React Native.  It utilizes the IMDB API to allow user to search for info
       on their favorite movies, tv shows, and videogames.`,
     'photo1': [mov1, mov2]
@@ -91,7 +93,7 @@ export const projects = [
     'buttonText': 'Details',
     'buttonTarget': '#',
     'github': 'https://github.com/KevinMillerSax/pomodoro',
-    'icons' : [react, js, html, css],
+    'icons' : [native, js, html, css],
     'description' : 'Pomodoro is a React Native app. Pomodoro is a time management technique where people break down their work and break time into intervals.',
     'photo1': [pomo1, pomo2]
   },  

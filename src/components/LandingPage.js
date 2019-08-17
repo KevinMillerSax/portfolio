@@ -6,11 +6,11 @@ class Landing extends Component {
       <div style={{width: '100%', margin: 'auto'}}>
         <Grid className="landing-grid">
           <Cell col={12}>
-            <img
+            {/* <img
               src="https://media.licdn.com/dms/image/C5603AQEHIWfYTrATtQ/profile-displayphoto-shrink_200_200/0?e=1570665600&v=beta&t=8mmn-LhmDkZpT75BlHOQn6nQ4r8qflecmdamV8xnmB0"
               alt="me"
               className = "avatar-img"
-            />
+            /> */}
             <div className="banner-text">
               <h1>Web Developer</h1>
               <hr/>

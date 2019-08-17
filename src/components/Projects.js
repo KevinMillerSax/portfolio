@@ -74,7 +74,7 @@ class Projects extends Component {
           <Cell>
             
           
-            <Dialog style={{width: "800px", paddingBottom: '0px'}}open={this.state.openDialog}>
+            <Dialog className= "dialog" style={{width: "800px", paddingBottom: '0px'}}open={this.state.openDialog}>
               <DialogTitle>
                 <div className="image-container">
                   {photos && photos.map((photo, index) => (
