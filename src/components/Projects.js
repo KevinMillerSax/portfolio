@@ -34,7 +34,7 @@ class Projects extends Component {
       <div className="projects-grid">
         {projects.map((el, index) => (
           
-          <Card key = {index}  shadow={5} style={{minWidth: '350px',margin: "0px auto 20px auto"}}>
+          <Card className="project-card" key = {index}  shadow={5} >
             <CardTitle  style={{color: '#fff', height: '200px', background: el['imageUrl']}}></CardTitle>
             <h5>{el['title']}</h5>
             <CardText>

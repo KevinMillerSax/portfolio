@@ -119,6 +119,8 @@ h1, h2, h3, h4, h5, p {
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+ 
 }
 
 
@@ -132,6 +134,12 @@ h1, h2, h3, h4, h5, p {
   height: 34px;
   padding-top: 10px;
   font-weight: bold;
+}
+
+.project-card {
+  min-width: 350px;
+  width: 30vw;
+  margin: 0px 20px 20px 20px;
 }
 
 .image-container {
@@ -160,8 +168,13 @@ h1, h2, h3, h4, h5, p {
 }
 
 
- @media(max-width: 400px){
+ @media(max-width: 750px){
   .projects-grid {
     padding-top: 30px;
+  }
+  .project-card {
+    min-width: 300px;
+    width: 90vw;
+    margin: 0px 20px 20px 20px;
   }
 } 
