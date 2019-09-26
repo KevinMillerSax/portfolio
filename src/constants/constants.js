@@ -26,11 +26,21 @@ import ken1 from '../images/ken1.png';
 
 export const projects = [
   {
+    'title': 'kennygsaxophones.com',
+    'imageUrl': `url(${kenny}) center/cover`,
+    'text': "The official eCommerce store for Kenny G's saxophone line. Developed for A&K Global Enterprises, Inc.", 
+    'buttonText': 'Link',
+    'buttonTarget': 'https://www.kennygsaxophones.com',
+    'github': 'https://github.com/KevinMillerSax/sax-store',
+    'icons' : [wp, php, js, html, css, sql],
+    'photo1': [ken1]
+  },  
+  {
     'title': 'rheubenallenwoodwinds.com',
     'imageUrl': `url(${rheuben}) center/cover`,
     'text': 'eCommerce site for Rheuben Allen and Associates', 
     'buttonText': 'Link',
-    'buttonTarget' : 'https://rheubenallenwoodwinds.com',
+    'buttonTarget' : 'https://rheubenallen.com',
     'github': 'https://github.com/KevinMillerSax/rheuben',
     'icons' : [wp, php, js, html, css, sql]
     
@@ -73,18 +83,6 @@ export const projects = [
     'buttonTarget': 'https://kevinmillersax.github.io/Chess/',
     'github': 'https://github.com/KevinMillerSax/Chess', 
     'icons' : [js, html, css]
-  },  
-  {
-    'title': 'Kenny G Saxophones',
-    'imageUrl': `url(${kenny}) center/cover`,
-    'text': 'In Development: a new eCommerce store for A&K Global Enterprises Inc.', 
-    'buttonText': 'Details',
-    'buttonTarget': '#',
-    'github': 'https://github.com/KevinMillerSax/sax-store',
-    'icons' : [wp, php, js, html, css, sql],
-    'description' : `(In Development) Kenny G Saxophones will be the eCommerce platform for A&K Global Enterprises Inc, the company that manufactures and 
-      distributes Kenny G's signature line of saxophones.  The platform is being built on WordPress with PHP and MySQL for the back end.`,
-    'photo1': [ken1]
   },  
   {
     'title': 'Pomodoro',

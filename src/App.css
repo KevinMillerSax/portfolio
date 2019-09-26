@@ -1,3 +1,5 @@
+
+
 h1, h2, h3, h4, h5, p {
   font-family: 'Quicksand', sans-serif !important;
 } 
@@ -117,7 +119,6 @@ h1, h2, h3, h4, h5, p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
- 
 }
 
 
@@ -170,7 +171,10 @@ h1, h2, h3, h4, h5, p {
 
 
 
- @media(max-width: 750px){
+ @media(max-width: 769px){
+  .landing-grid{
+    height: 100vh;
+  }
   .projects-grid {
     padding-top: 30px;
   }
@@ -195,5 +199,5 @@ h1, h2, h3, h4, h5, p {
     font-size: 33px;
     padding-right: 1rem;
   }
-  
-} 
+}
+
