@@ -36,7 +36,7 @@ export const projects = [
     'photo1': [ken1]
   },  
   {
-    'title': 'rheubenallenwoodwinds.com',
+    'title': 'rheubenallen.com',
     'imageUrl': `url(${rheuben}) center/cover`,
     'text': 'eCommerce site for Rheuben Allen and Associates', 
     'buttonText': 'Link',
