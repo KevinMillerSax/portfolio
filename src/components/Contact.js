@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
+import kev from '../images/kevin-headshot.jpeg';
 
 class Contact extends Component {
   render() {
@@ -9,7 +10,7 @@ class Contact extends Component {
           <Cell col="6">
             <h2>Me:</h2>
             <img 
-              src="https://media.licdn.com/dms/image/C5603AQEHIWfYTrATtQ/profile-displayphoto-shrink_200_200/0?e=1570665600&v=beta&t=8mmn-LhmDkZpT75BlHOQn6nQ4r8qflecmdamV8xnmB0"
+              src= {kev}
               alt="photo of me"
               style={{height: '250px'}}
             />
