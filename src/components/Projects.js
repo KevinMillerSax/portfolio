@@ -44,7 +44,7 @@ class Projects extends Component {
               <a href={el['github']} target="_blank"><Button colored>GitHub</Button></a>
               {el['buttonText'] === 'Details' 
                 ? <a onClick={() => this.handleOpenDialog(el['description'], el['photo1'])}><Button colored>{el['buttonText']}</Button></a> 
-                : <a href={el['buttonTarget']} target="_blank"><Button colored>{el['buttonText']}</Button></a> }    
+                : <a href={el['buttonTarget']} target="_blank"><Button colored>{el['buttonText']}</Button></a> }
             </CardActions>
             <CardText style={{paddingTop: '0px'}}>
               {el['icons'].map((image, index) => (
@@ -58,12 +58,12 @@ class Projects extends Component {
       </div>
     );
   }
-  
+
 
   render() {
     const photos = this.state.photos;
     return(
-      <div>   
+      <div> 
         <Grid>
           <Cell col={12}>
             <div className="content">{this.createCards()}
@@ -72,8 +72,6 @@ class Projects extends Component {
 
           {/* modal start */}
           <Cell>
-            
-          
             <Dialog className= "dialog" style={{width: "800px", paddingBottom: '0px'}}open={this.state.openDialog}>
               <DialogTitle>
                 <div className="image-container">
@@ -89,15 +87,11 @@ class Projects extends Component {
                 <Button type='button' onClick={this.handleCloseDialog}>Close</Button>
               </DialogActions>
             </Dialog>
-           
           </Cell>
           {/* modal end */}
 
-        </Grid>  
+        </Grid>
       </div>
-     
-      
-      
     );
   }
 }

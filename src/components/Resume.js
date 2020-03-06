@@ -13,28 +13,35 @@ class Resume extends Component {
             <h4 style={{color: 'grey'}}>Web Developer</h4>
             <h5 style={{color: 'grey'}}>Los Angeles, CA.</h5>
             <hr className="resume-hr"/>
-            <p> I’m a motivated front-end developer who’s passionate about new technologies and design. I communicate freely in  React, JavaScript, HTML, and CSS. I am focused on constantly learning new technologies and I apply this knowledge to make my websites scalable and to provide the best user experience.   </p>
+            <p>I’m a motivated full-stack developer who’s passionate about new technologies and design. I possess the skills to create elegant and user-friendly sites that increase customer retention. Currently working as a front end developer for InvestCloud, a FinTech company in West Hollywood. </p>
             <hr className="resume-hr"/>
             <h5>Phone</h5>
             <p>317-654-8915</p>
             <h5>Email</h5>
             <p>kmilsax@gmail.com</p>
             <hr className="resume-hr"/>
-            <a href="https://drive.google.com/open?id=1kkjjUAYRQzKMtnvRBfRdqlAm8pHM-Roe" target="_blank" style={{color: '#00b09b'}}>
+            <a href="https://drive.google.com/file/d/1PmpB1yP8rPYM8O7gRJbDgbRbSPHvjKeE/view?usp=sharing" target="_blank" style={{color: '#00b09b'}}>
               Get My Resume in PDF
             </a>
           </Cell>
           
           <Cell className="resume-right-col" col={8}>
             <h2>Work History</h2>
-            <Experience 
+            <Experience
               start={2019}
-              end={'today'}
+              end={'Present'}
+              title={'Front End Developer - InvestCloud'}
+              description={`Creating interactive pages for financial institutions.  Using Angular components
+              and a discributed databases.`}
+            />
+            <Experience
+              start={2019}
+              end={2019}
               title={'Web Developer'}
-              description={`Contractor for A&K Global Enterprises, Inc. I'm building an eCommerce 
+              description={`Contractor for A&K Global Enterprises, Inc. I'm building an eCommerce
               platform that will sell gifts and musical instruments. `}
             />
-            <Experience 
+            <Experience
               start={2016}
               end={2019}
               title={'Musician - Carnival Corporation'}
@@ -42,13 +49,13 @@ class Resume extends Component {
               I was responsible for marketing and advertising through demographic research and creative targeting.
               Also, I was chosen to be the Team Member of the Month for an engaging and proactive attitude. `}
             />
-            <Experience 
+            <Experience
               start={2014}
               end={2016}
               title={'Musician - Norwegian Cruise Lines'}
               description={`Performed Broadway productions in the main theaters of the ships: Oceania Marina and Norwegian Pearl. `}
             />
-            <Experience 
+            <Experience
               start={2013}
               end={2014}
               title={'English Teacher'}
@@ -56,7 +63,7 @@ class Resume extends Component {
             />
             <hr className="resume-hr" style={{width: '100%'}} />
             <h3>Education</h3>
-            <Education 
+            <Education
               start={2008}
               end={2012}
               title={'Ball State University'}
@@ -67,7 +74,6 @@ class Resume extends Component {
             <h4>Skills:</h4>
             <p>JavaScript (ES6+), React, React-Native, jQuery, NodeJS, Express, MongoDB, Mongoose, SQL, HTML, CSS, SASS, WordPress, PHP, PhotoShop, terminal, Git, GitHub, MS Office </p>
 
-            
           </Cell>
         </Grid>
       </div>

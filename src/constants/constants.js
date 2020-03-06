@@ -20,21 +20,32 @@ import pomo2 from '../images/waterfall2.png';
 import mov1 from '../images/mov1.png';
 import mov2 from '../images/mov2.png';
 import ken1 from '../images/ken1.png';
+import rails from '../images/rails.png';
+import coffee from '../images/coffee.png'
 
 
 
 
 export const projects = [
   {
+    'title': 'Nervosa Coffee Forum',
+    'imageUrl': `url(${coffee}) center/cover`,
+    'text': `Ruby on Rails app with SQL database.`,
+    'buttonText': 'Link',
+    'buttonTarget': 'https://nervosa-coffee.herokuapp.com/',
+    'github': 'https://github.com/KevinMillerSax/coffee',
+    'icons' : [rails, html, css, sql],
+  },
+  {
     'title': 'kennygsaxophones.com',
     'imageUrl': `url(${kenny}) center/cover`,
-    'text': "The official eCommerce store for Kenny G's saxophone line. Developed for A&K Global Enterprises, Inc.", 
+    'text': "The official eCommerce store for Kenny G's saxophone line. Developed for A&K Global Enterprises, Inc.",
     'buttonText': 'Link',
     'buttonTarget': 'https://www.kennygsaxophones.com',
     'github': 'https://github.com/KevinMillerSax/sax-store',
     'icons' : [wp, php, js, html, css, sql],
     'photo1': [ken1]
-  },  
+  },
   {
     'title': 'rheubenallen.com',
     'imageUrl': `url(${rheuben}) center/cover`,
@@ -43,8 +54,7 @@ export const projects = [
     'buttonTarget' : 'https://rheubenallen.com',
     'github': 'https://github.com/KevinMillerSax/rheuben',
     'icons' : [wp, php, js, html, css, sql]
-    
-  },  
+  },
   {
     'title': 'Frasier-Fan',
     'imageUrl': `url(${frasier}) center/cover`,
