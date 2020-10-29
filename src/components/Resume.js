@@ -10,7 +10,7 @@ class Resume extends Component {
         <Grid>
           <Cell col={4}>
             <h2 style={{paddingTop: '0'}}>Kevin Miller</h2>
-            <h4 style={{color: 'grey'}}>Web Developer</h4>
+            <h4 style={{color: 'grey'}}>Software Engineer</h4>
             <h5 style={{color: 'grey'}}>Los Angeles, CA.</h5>
             <hr className="resume-hr"/>
             <p>I’m a motivated full-stack developer who’s passionate about new technologies and design. I possess the skills to create elegant and user-friendly sites that increase customer retention. I make it a point to constantly learn new skills and grow as an engineer.
@@ -21,7 +21,7 @@ class Resume extends Component {
             <h5>Email</h5>
             <p>kmilsax@gmail.com</p>
             <hr className="resume-hr"/>
-            <a href="https://drive.google.com/file/d/1PmpB1yP8rPYM8O7gRJbDgbRbSPHvjKeE/view?usp=sharing" target="_blank" style={{color: '#00b09b'}}>
+            <a href="https://drive.google.com/file/d/1AGir7mp-tj3bNKMGMr8TtBrQ5CM3062b/view?usp=sharing" target="_blank" style={{color: '#00b09b'}}>
               Get My Resume in PDF
             </a>
           </Cell>

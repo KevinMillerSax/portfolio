@@ -22,11 +22,22 @@ import mov2 from '../images/mov2.png';
 import ken1 from '../images/ken1.png';
 import rails from '../images/rails.png';
 import coffee from '../images/coffee.png'
-
-
-
+import python from '../images/python.png'
+import numpy from '../images/numpy.png'
+import pandas from '../images/pandas.png'
+import stock from '../images/stock.jpg'
 
 export const projects = [
+  {
+    'title': 'Td Trader',
+    'imageUrl': `url(${stock}) center/cover`,
+    'text': 'Python with Pandas and Numpy',
+    'buttonText': 'Details',
+    'buttonTarget': '#',
+    'description': 'Td Trader is a project in progress.  It finds patterns in the movement of stock prices and executes trades via the TdAmeritrade API',
+    'github': 'https://github.com/KevinMillerSax/trade',
+    'icons': [python, pandas, numpy],
+  },
   {
     'title': 'Nervosa Coffee Forum',
     'imageUrl': `url(${coffee}) center/cover`,
@@ -49,7 +60,7 @@ export const projects = [
   {
     'title': 'rheubenallen.com',
     'imageUrl': `url(${rheuben}) center/cover`,
-    'text': 'eCommerce site for Rheuben Allen and Associates', 
+    'text': 'eCommerce site for Rheuben Allen and Associates',
     'buttonText': 'Link',
     'buttonTarget' : 'https://rheubenallen.com',
     'github': 'https://github.com/KevinMillerSax/rheuben',
@@ -62,8 +73,8 @@ export const projects = [
     'buttonText': 'Link',
     'buttonTarget': 'https://frasier-app.herokuapp.com/',
     'github': 'https://github.com/KevinMillerSax/frasier',
-    'icons' : [node, mongo, js, html, css] 
-  },  
+    'icons' : [node, mongo, js, html, css]
+  },
   {
     'title': 'Movie Finder',
     'imageUrl': `url(${movie}) center/cover`,
@@ -75,44 +86,44 @@ export const projects = [
     'description' : `Movie Finder is an app built with React Native.  It utilizes the IMDB API to allow user to search for info
       on their favorite movies, tv shows, and videogames.`,
     'photo1': [mov1, mov2]
-  },  
+  },
   {
     'title': 'Metronome',
     'imageUrl': `url(${metronome}) center/cover`,
-    'text': 'React app that helps musicians keep the beat', 
+    'text': 'React app that helps musicians keep the beat',
     'buttonText': 'Demo',
     'buttonTarget': 'https://km-metronome.herokuapp.com/',
     'github': 'https://github.com/KevinMillerSax/metronome',
-    'icons' : [react, js, html, css] 
-  },  
+    'icons' : [react, js, html, css]
+  },
   {
     'title': 'Chess',
     'imageUrl': `url(${chess}) center/cover`,
-    'text': 'JavaScript/HTML/CSS two player chess app', 
+    'text': 'JavaScript/HTML/CSS two player chess app',
     'buttonText': 'Demo',
     'buttonTarget': 'https://kevinmillersax.github.io/Chess/',
-    'github': 'https://github.com/KevinMillerSax/Chess', 
+    'github': 'https://github.com/KevinMillerSax/Chess',
     'icons' : [js, html, css]
-  },  
+  },
   {
     'title': 'Pomodoro',
     'imageUrl': `url(${pomo1}) center/cover`,
-    'text': 'Pomodoro timer build in React Native', 
+    'text': 'Pomodoro timer build in React Native',
     'buttonText': 'Details',
     'buttonTarget': '#',
     'github': 'https://github.com/KevinMillerSax/pomodoro',
     'icons' : [native, js, html, css],
     'description' : 'Pomodoro is a React Native app. Pomodoro is a time management technique where people break down their work and break time into intervals.',
     'photo1': [pomo1, pomo2]
-  },  
+  },
   {
     'title': 'Tic-Tac-Toe',
     'imageUrl': `url(${ticTac}) center/cover`,
-    'text': 'Tic-Tac-Toe game built with JavaScript/HTML/CSS', 
+    'text': 'Tic-Tac-Toe game built with JavaScript/HTML/CSS',
     'buttonText': 'Demo',
     'buttonTarget': 'https://kevinmillersax.github.io/ticTacToe/',
     'github': 'https://github.com/KevinMillerSax/ticTacToe',
-    'icons' : [js, html, css] 
-  },  
+    'icons' : [js, html, css]
+  },
 ]
 
