@@ -14,7 +14,7 @@ class Landing extends Component {
             <div className="banner-text">
               <h1>Web Developer</h1>
               <hr/>
-              <p>JavaScript | React | PHP | NodeJS | HTML | CSS | WordPress | MongoDB | Mongoose | jQuery | SQL</p>
+              <p>JavaScript | React | Redux | Rails | NodeJS | HTML | CSS | WordPress | MongoDB | jQuery | SQL</p>
               <div className="social-links">
                 <a href="https://www.linkedin.com/in/k-p-miller/" target="_blank">
                   <i className="fa fa-linkedin" aria-hidden="true"></i>
