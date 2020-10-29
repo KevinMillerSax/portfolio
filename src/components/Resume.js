@@ -13,7 +13,8 @@ class Resume extends Component {
             <h4 style={{color: 'grey'}}>Web Developer</h4>
             <h5 style={{color: 'grey'}}>Los Angeles, CA.</h5>
             <hr className="resume-hr"/>
-            <p>I’m a motivated full-stack developer who’s passionate about new technologies and design. I possess the skills to create elegant and user-friendly sites that increase customer retention. Currently working as a front end developer for InvestCloud, a FinTech company in West Hollywood. </p>
+            <p>I’m a motivated full-stack developer who’s passionate about new technologies and design. I possess the skills to create elegant and user-friendly sites that increase customer retention. I make it a point to constantly learn new skills and grow as an engineer.
+            Currently, I’m working as a full stack engineer for Silversheet, a medical credentialing company. </p>
             <hr className="resume-hr"/>
             <h5>Phone</h5>
             <p>317-654-8915</p>
@@ -32,14 +33,18 @@ class Resume extends Component {
               end={'Present'}
               title={'Software Engineer - Silversheet'}
               description={`Building and maintaining software for credentialing doctors and medical
-              professionals.  Working with React and Ruby on Rails`}
+              professionals.  Working with React and Ruby on Rails.`}
+              link="https://www.silversheet.com"
+              linkDescription="Silversheet.com"
             />
             <Experience
               start={2019}
-              end={2019}
+              end={2020}
               title={'Front End Developer - InvestCloud'}
               description={`Creating interactive pages for financial institutions.  Using Angular components
               and a discributed databases.`}
+              link="https://www.investcloud.com/"
+              linkDescription="InvestCloud.com"
             />
             <Experience
               start={2019}
@@ -79,7 +84,8 @@ class Resume extends Component {
             />
             <hr className="resume-hr" style={{width: '100%'}} />
             <h4>Skills:</h4>
-            <p>JavaScript (ES6+), React, React-Native, jQuery, NodeJS, Express, MongoDB, Mongoose, SQL, HTML, CSS, SASS, WordPress, PHP, PhotoShop, terminal, Git, GitHub, MS Office </p>
+            <p>JavaScript, Ruby, Rails, React, Redux, PHP, NodeJS, SQL, MongoDB, React Native, Firebase, WordPress, Python, HTML5, CSS, SASS, RSpec3, mintiest, git, Heroku
+</p>
 
           </Cell>
         </Grid>

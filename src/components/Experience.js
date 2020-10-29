@@ -12,7 +12,7 @@ class Experience extends Component {
           </Cell>
           <Cell col={8}>
             <h4 style={{margin: '0'}}>{this.props.title}</h4>
-            <p>{this.props.description}</p>
+            <p>{this.props.description}  <a href={this.props.link} target="_blank">{this.props.linkDescription}</a></p>
           </Cell>
         </Grid>
       </div>
