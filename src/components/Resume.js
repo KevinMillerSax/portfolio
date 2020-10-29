@@ -24,12 +24,19 @@ class Resume extends Component {
               Get My Resume in PDF
             </a>
           </Cell>
-          
+
           <Cell className="resume-right-col" col={8}>
             <h2>Work History</h2>
             <Experience
-              start={2019}
+              start={2020}
               end={'Present'}
+              title={'Software Engineer - Silversheet'}
+              description={`Building and maintaining software for credentialing doctors and medical
+              professionals.  Working with React and Ruby on Rails`}
+            />
+            <Experience
+              start={2019}
+              end={2019}
               title={'Front End Developer - InvestCloud'}
               description={`Creating interactive pages for financial institutions.  Using Angular components
               and a discributed databases.`}
