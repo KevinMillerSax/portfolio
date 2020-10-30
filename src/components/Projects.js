@@ -59,11 +59,15 @@ class Projects extends Component {
     );
   }
 
-
   render() {
     const photos = this.state.photos;
+    const isNotMobile = () => window.innerWidth > 1000;
+    const dialogStyle = () => {
+      if (isNotMobile()) return {width: "800px", paddingBottom: '0px'};
+      return {};
+    };
     return(
-      <div> 
+      <div>
         <Grid>
           <Cell col={12}>
             <div className="content">{this.createCards()}
@@ -72,14 +76,14 @@ class Projects extends Component {
 
           {/* modal start */}
           <Cell>
-            <Dialog className= "dialog" style={{width: "800px", paddingBottom: '0px'}}open={this.state.openDialog}>
-              <DialogTitle>
+            <Dialog className= "dialog" style={dialogStyle()} open={this.state.openDialog}>
+              {isNotMobile() && (<DialogTitle>
                 <div className="image-container">
                   {photos && photos.map((photo, index) => (
                     <img key= {index} style={{height: '300px'}}src={photo}></img>
                   ))}
                 </div>
-              </DialogTitle>
+              </DialogTitle>)}
               <DialogContent>
                 <p>{this.state.text}</p>
               </DialogContent>
