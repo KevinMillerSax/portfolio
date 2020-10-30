@@ -51,8 +51,9 @@ export const projects = [
     'title': 'kennygsaxophones.com',
     'imageUrl': `url(${kenny}) center/cover`,
     'text': "The official eCommerce store for Kenny G's saxophone line. Developed for A&K Global Enterprises, Inc.",
-    'buttonText': 'Link',
-    'buttonTarget': 'https://www.kennygsaxophones.com',
+    'buttonText': 'Details',
+    'buttonTarget': '#',
+    'description': `A custom Wordpress theme that utilizes WooCommerce to sell saxophones. It's built in PHP, JavaScript, HTML, and CSS`,
     'github': 'https://github.com/KevinMillerSax/sax-store',
     'icons' : [wp, php, js, html, css, sql],
     'photo1': [ken1]
@@ -61,15 +62,16 @@ export const projects = [
     'title': 'rheubenallen.com',
     'imageUrl': `url(${rheuben}) center/cover`,
     'text': 'eCommerce site for Rheuben Allen and Associates',
-    'buttonText': 'Link',
-    'buttonTarget' : 'https://rheubenallen.com',
+    'buttonText': 'Details',
+    'buttonTarget' : '#',
+    'description': 'An eCommerce site built in Wordpress.',
     'github': 'https://github.com/KevinMillerSax/rheuben',
     'icons' : [wp, php, js, html, css, sql]
   },
   {
     'title': 'Frasier-Fan',
     'imageUrl': `url(${frasier}) center/cover`,
-    'text': 'Full stack CRUD app built with NodeJS, MongoDB, Passport, Express, and GoogleOauth', 
+    'text': 'Full stack CRUD app built with NodeJS, MongoDB, Passport, Express, and GoogleOauth',
     'buttonText': 'Link',
     'buttonTarget': 'https://frasier-app.herokuapp.com/',
     'github': 'https://github.com/KevinMillerSax/frasier',
@@ -78,12 +80,12 @@ export const projects = [
   {
     'title': 'Movie Finder',
     'imageUrl': `url(${movie}) center/cover`,
-    'text': 'React Native app that searches IMDB for info on movies and tv shows', 
+    'text': 'React Native app that searches IMDB for info on movies and tv shows',
     'buttonText': 'Details',
     'buttonTarget': '#',
     'github': 'https://github.com/KevinMillerSax/movie-finder',
     'icons' : [native, js, html, css],
-    'description' : `Movie Finder is an app built with React Native.  It utilizes the IMDB API to allow user to search for info
+    'description' : `Movie Finder is an app built with React Native.  It utilizes the IMDB API to allow users to search for info
       on their favorite movies, tv shows, and videogames.`,
     'photo1': [mov1, mov2]
   },
